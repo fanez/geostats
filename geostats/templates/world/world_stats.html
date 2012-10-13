@@ -70,6 +70,19 @@ function animouse(event) {
 
   <div class="content">
     <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2><span>{{ indicator.name }}</span></h2>
+          <span>{{ vmin|floatformat:"-2" }}</span><img src="/static/media/plot/colorbar.png" alt="colorbar" /><span>{{ vmax|floatformat:"-2" }}</span>
+          <p>{{ indicator.sourceNote }}</p>
+          <p><a href="{{ indicator.wb_url }}">View more</a></p>
+        </div>
+        <div class="article">
+          <h2><span>{{ region.code }}</span></h2>
+          <p>{{ region.name }}</p>
+          <p><a href="{{ region.wb_url }}">View more</a></p>
+        </div>
+	  </div>
       <div id="{{ google.dom_id }}" style="width: 927px;height: 500px; margin-left: -20px; margin-bottom: 40px; top: 20px" onmousemove="animouse(event)"></div>
       <p style="clear: both;text-align: center"><img style="margin-left: -20px;" src="http://chart.apis.google.com/chart?chf=bg,s,112200&chxr=0,0,50&chxt=y&chbh=a,3,5&chs=820x50&cht=bvg&chco=C1E09E&chds=0,50&chd=t:{{ histo_values }}" alt="data availability" /></p>
       <div id="timeslider" style="margin: auto"></div>
