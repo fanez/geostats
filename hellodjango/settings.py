@@ -101,10 +101,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'geostats.urls'
+ROOT_URLCONF = 'hellodjango.urls'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_ROOT, 'geostats/templates/'),
+    os.path.join(PROJECT_ROOT, 'hellodjango/templates/'),
 )
 
 INSTALLED_APPS = (
