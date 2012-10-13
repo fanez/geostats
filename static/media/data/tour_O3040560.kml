@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <Style id="folderStyle">
+            <ListStyle>
+                <listItemType>checkHideChildren</listItemType>
+            </ListStyle>
+        </Style>
+        <Style id="Cours_Eau_default">
+            <LineStyle>
+               <color>99800000</color>
+               <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>5</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+         <Style id="Cours_Eau_random">
+            <LineStyle>
+               <colorMode>random</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+        <Style id="Confluent">
+            <LineStyle>
+                <color>99ffff66</color>
+                <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+        </Style>
+           
+        <Folder>
+            <name>Fleuve</name>
+            <description>Carthage</description>
+            <styleUrl>#folderStyle</styleUrl>
+            <Placemark>
+        <description>Valat du Tarnon</description>
+        <styleUrl>#Cours_Eau_default</styleUrl>
+        <MultiGeometry><LineString><coordinates>3.64524813463591,44.1457410052629 3.64418568488875,44.1457472517441 3.6421255180271,44.1459573552427 3.64063227590102,44.146560150404 3.63821402216183,44.1471683125926 3.63771413387844,44.1471802216719 3.6372126314213,44.1470481229505 3.63677514172307,44.1470506642226 3.63633926373411,44.1471972092849 3.63603180454228,44.1476490395524 3.6355468260551,44.1478768746398 3.63517585142048,44.1482390613441 3.63499136756393,44.1485101577875 3.63456948070457,44.1487916288705 3.63400898391114,44.1489748894753 3.63280907119537,44.1489908209596 3.63230706366926,44.1488136978913 3.63179165905523,44.1485556413431 3.63116365931531,44.148289229599 3.63084816364777,44.1480210170587 3.63053227169185,44.1477168022322 3.62965478943984,44.1474968208723 3.62869793627881,44.146881246999 3.62775797585932,44.146661608852 3.6270079978755,44.1466658995892 3.62588511134088,44.1468613335073 3.62563610816334,44.1469527636003 3.62527708128886,44.1472698435427 3.62496656574244,44.1474516320532 3.62384415045998,44.1476920469489 3.62340862898536,44.147874542107 3.62260873361242,44.1478880873478 3.62229771359163,44.1480248665466 3.62186267682706,44.1482523574173 3.62148875937689,44.1483534872856 3.61997586512056,44.1483260470906</coordinates></LineString></MultiGeometry>
+        </Placemark>
+        
+        </Folder>
+        <gx:Tour>
+        <name>dowstream tour</name>
+        <visibility>1</visibility>
+        <gx:Playlist>
+                
+        </gx:Playlist>
+    </gx:Tour>
+    
+    </Document>
+    </kml>
+    

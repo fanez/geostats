@@ -1,0 +1,8 @@
+www:
+  type: python
+  systempackages:
+    - libatlas-base-dev
+    - gfortran
+
+db:
+  type: postgis 

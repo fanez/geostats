@@ -1,0 +1,42 @@
+#http://localhost/cgi-bin/mapserv?map=/home/scy/pyDev/Django/media/map/auat.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=auat&WIDTH=400&HEIGHT=300&SRS=EPSG:27563&FORMAT=image/png&BBOX=487999.75,90000.25,564999.75,177500.25
+
+
+MAP
+	CONFIG "MS_ERRORFILE" "stderr"
+	#DEBUG 5
+	
+	OUTPUTFORMAT
+	    NAME agg
+	    DRIVER AGG/PNG
+	    IMAGEMODE RGB
+	    FORMATOPTION "INTERLACE=false"
+	    MIMETYPE "image/png"
+	END
+	IMAGETYPE agg
+	MAXSIZE 4000
+	SIZE 256 256
+	EXTENT 487999.75 90000.25 564999.75 177500.25
+	UNITS meters
+	
+	CONFIG "PROJ_LIB" "/usr/share/proj"
+	PROJECTION
+		"+init=epsg:27563"
+	END
+	
+	WEB
+	    METADATA
+	        wms_srs "epsg:27563"
+	        labelcache_map_edge_buffer "-10"
+	        wms_title "Toulouse sur le toit"
+	    END
+	END
+	
+	LAYER
+		NAME "auat"
+		STATUS ON
+		TILEINDEX "/home/scy/Desktop/AUAT/auat.shp"
+		TILEITEM "location"
+		TYPE RASTER
+	END
+
+END

@@ -1,0 +1,1673 @@
+MAP
+  EXTENT 647000 2373000 649000 2375000
+  IMAGECOLOR 255 255 255
+  IMAGETYPE gif
+  SIZE -1 -1
+  STATUS ON
+  UNITS METERS
+  NAME "Mobisic WFS"
+
+  OUTPUTFORMAT
+    NAME "gif"
+    MIMETYPE "image/gif"
+    DRIVER "GD/GIF"
+    EXTENSION "gif"
+    IMAGEMODE "PC256"
+    TRANSPARENT FALSE
+  END
+
+  PROJECTION
+    "+init=epsg:27572"
+  END
+  LEGEND
+    IMAGECOLOR 255 255 255
+    KEYSIZE 20 10
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 0
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    STATUS OFF
+  END
+
+  QUERYMAP
+    COLOR 255 255 0
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END
+
+  SCALEBAR
+    ALIGN CENTER
+    COLOR 0 0 0
+    IMAGECOLOR 255 255 255
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 0
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    SIZE 200 3
+    STATUS OFF
+    STYLE 0
+    UNITS MILES
+  END
+
+  WEB
+    IMAGEPATH ""
+    IMAGEURL ""
+    METADATA
+      "wfs_title"	"Mobisic WFS Server"
+      "wfs_version"	"1.1.0"
+    END
+    QUERYFORMAT text/html
+    LEGENDFORMAT text/html
+    BROWSEFORMAT text/html
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/cimetiere.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"cimetiere.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "cimetiere.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/surface_activite.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"surface_activite.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "surface_activite.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/toponyme_ferre.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"toponyme_ferre.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "toponyme_ferre.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/conduite.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"conduite.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "conduite.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/ligne_orographique.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"ligne_orographique.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "ligne_orographique.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_sante.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"pai_sante.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_sante.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/piste_aerodrome.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"piste_aerodrome.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "piste_aerodrome.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/construction_legere.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"construction_legere.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "construction_legere.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/poste_transformation.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"poste_transformation.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "poste_transformation.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_orographie.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_orographie.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_orographie.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_culture_loisirs.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_culture_loisirs.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_culture_loisirs.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/surface_eau.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"surface_eau.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "surface_eau.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/troncon_voie_ferree.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"troncon_voie_ferree.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "troncon_voie_ferree.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/ligne_electrique.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"ligne_electrique.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "ligne_electrique.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/construction_ponctuelle.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"construction_ponctuelle.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "construction_ponctuelle.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_religieux.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_religieux.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_religieux.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/bati_industriel.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"bati_industriel.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "bati_industriel.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/commune.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"commune.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "commune.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/canalisation_eau.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"canalisation_eau.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "canalisation_eau.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_transport.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_transport.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_transport.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_administratif_militaire.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_administratif_militaire.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_administratif_militaire.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/hydronyme.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"hydronyme.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "hydronyme.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/arrondissement.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"arrondissement.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "arrondissement.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_science_enseignement.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_science_enseignement.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_science_enseignement.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/oronyme.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"oronyme.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "oronyme.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/troncon_laisse.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"troncon_laisse.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "troncon_laisse.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/reservoir.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"reservoir.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "reservoir.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_gestion_eaux.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_gestion_eaux.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_gestion_eaux.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pylone.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"pylone.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pylone.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/troncon_cours_eau.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"troncon_cours_eau.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "troncon_cours_eau.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_espace_naturel.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_espace_naturel.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_espace_naturel.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/route.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"route.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "route.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/reservoir_eau.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"reservoir_eau.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "reservoir_eau.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/point_eau.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"point_eau.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "point_eau.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_industriel_commercial.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_industriel_commercial.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_industriel_commercial.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/chemin.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"chemin.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "chemin.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/aire_triage.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"aire_triage.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "aire_triage.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/toponyme_communication.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"toponyme_communication.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "toponyme_communication.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/route_secondaire.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"route_secondaire.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "route_secondaire.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_sport.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"pai_sport.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_sport.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/transport_cable.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"transport_cable.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "transport_cable.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_hydrographie.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"pai_hydrographie.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_hydrographie.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/surface_route.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"surface_route.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "surface_route.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/construction_surfacique.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"construction_surfacique.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "construction_surfacique.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/gare.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"gare.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "gare.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/bati_remarquable.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"bati_remarquable.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "bati_remarquable.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/bati_indifferencie.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"bati_indifferencie.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "bati_indifferencie.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/pai_zone_habitation.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"pai_zone_habitation.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "pai_zone_habitation.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/construction_lineaire.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"construction_lineaire.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "construction_lineaire.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/terrain_sport.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"polygon"
+      "wfs_title"	"terrain_sport.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "terrain_sport.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POLYGON
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/route_nommee.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"route_nommee.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "route_nommee.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/chef_lieu.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"point"
+      "wfs_title"	"chef_lieu.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "chef_lieu.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE POINT
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/topo/SHP/route_primaire.shp"
+    DUMP TRUE
+    METADATA
+      "gml_featureid"	"gid"
+      "gml_geom_type"	"line"
+      "wfs_title"	"route_primaire.shp"
+      "gml_include_items"	"all"
+      "gml_geometries"	"geom"
+    END
+    NAME "route_primaire.shp"
+    PROJECTION
+      "proj=lcc"
+      "lat_1=46.8"
+      "lat_0=46.8"
+      "lon_0=0"
+      "k_0=0.99987742"
+      "x_0=600000"
+      "y_0=2200000"
+      "a=6378249.2"
+      "b=6356514.999978254"
+      "pm=2.337229167"
+      "units=m"
+      "no_defs"
+    END
+    STATUS DEFAULT
+    TYPE LINE
+    UNITS METERS
+  END
+
+END

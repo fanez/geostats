@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <Style id="folderStyle">
+            <ListStyle>
+                <listItemType>checkHideChildren</listItemType>
+            </ListStyle>
+        </Style>
+        <Style id="Cours_Eau_default">
+            <LineStyle>
+               <color>99800000</color>
+               <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>5</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+         <Style id="Cours_Eau_random">
+            <LineStyle>
+               <colorMode>random</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+        <Style id="Confluent">
+            <LineStyle>
+                <color>99ffff66</color>
+                <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+        </Style>
+           
+        <Folder>
+            <name>Fleuve</name>
+            <description>Carthage</description>
+            <styleUrl>#folderStyle</styleUrl>
+            <Placemark>
+        <description>Bras des Tarnauds</description>
+        <styleUrl>#Cours_Eau_default</styleUrl>
+        <MultiGeometry><LineString><coordinates>4.04686990693786,49.0251662854145 4.04578810700199,49.0257692238842 4.04496959324896,49.0258662762814 4.04380095965923,49.0255527084875 4.04347771014073,49.0257983180202 4.04020415802802,49.0262134041103 4.03818301157541,49.0263478007378 4.03656950958471,49.0263527487142 4.03482489371928,49.0259541395909 4.03347929864554,49.0256779672215 4.03277236687971,49.0251984513323</coordinates></LineString></MultiGeometry>
+        </Placemark>
+        
+        </Folder>
+        <gx:Tour>
+        <name>dowstream tour</name>
+        <visibility>1</visibility>
+        <gx:Playlist>
+                
+        </gx:Playlist>
+    </gx:Tour>
+    
+    </Document>
+    </kml>
+    

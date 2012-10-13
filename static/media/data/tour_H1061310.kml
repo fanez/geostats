@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <Style id="folderStyle">
+            <ListStyle>
+                <listItemType>checkHideChildren</listItemType>
+            </ListStyle>
+        </Style>
+        <Style id="Cours_Eau_default">
+            <LineStyle>
+               <color>99800000</color>
+               <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>5</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+         <Style id="Cours_Eau_random">
+            <LineStyle>
+               <colorMode>random</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+        <Style id="Confluent">
+            <LineStyle>
+                <color>99ffff66</color>
+                <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+        </Style>
+           
+        <Folder>
+            <name>Fleuve</name>
+            <description>Carthage</description>
+            <styleUrl>#folderStyle</styleUrl>
+            <Placemark>
+        <description>Gorge du Diable</description>
+        <styleUrl>#Cours_Eau_default</styleUrl>
+        <MultiGeometry><LineString><coordinates>5.04862624223489,49.0588696749151 5.04835801810585,49.0590091669516 5.04754837061515,49.0593018005599 5.04624454889291,49.059557874528 5.04517465139627,49.0598459298589 5.0444404457627,49.0603171476677 5.04380728367534,49.0609215591476 5.04177363439538,49.0614148599534 5.04125469007659,49.0617924530328 5.04106896771699,49.0622903055183 5.03987315790243,49.0628592794673 5.03835972605264,49.0640542484284 5.03810239495057,49.0644723594209 5.03661641917673,49.0649742648098 5.03615097925961,49.0649731594916 5.03527065834448,49.0652129370051 5.03376630906834,49.0652474064297 5.03273192181061,49.0650490455155 5.0324583404354,49.0650536740378 5.03179374985423,49.0655596090263 5.03154299732198,49.0657977045251 5.03066264112379,49.0660374480902 5.03052936617817,49.0661296448426 5.0306065594222,49.0663532007578 5.03074863187696,49.0664857157888 5.03091494197031,49.0668876535078 5.03126925014681,49.0671964684929 5.03127804967044,49.0674211800999 5.03094485526609,49.067651673086 5.03041697382607,49.0678045055809 5.03008553203482,49.0680799384003 5.02995612016098,49.0682710073926 5.02927739816449,49.0684173886117 5.02914587274602,49.0685545259148 5.02869305639467,49.0688769762115 5.02781650011415,49.0692155712242 5.02715181095489,49.0697214785026 5.02683577613272,49.0700416133053 5.02623455373976,49.0704205229477 5.02429121887692,49.0711368502613 5.02355666379724,49.0716079353021 5.02290418116673,49.0720776337378 5.02256916711974,49.0722631602339 5.02202543054769,49.0723622547942 5.02161009441482,49.0722433224466 5.02133822557646,49.0722928678669 5.02100495572379,49.0725233322047 5.02075552080185,49.0727973573732 5.02048539899056,49.0728918430707</coordinates></LineString></MultiGeometry>
+        </Placemark>
+        
+        </Folder>
+        <gx:Tour>
+        <name>dowstream tour</name>
+        <visibility>1</visibility>
+        <gx:Playlist>
+            <gx:FlyTo>
+            <gx:duration>1</gx:duration>
+            <gx:flyToMode>smooth</gx:flyToMode>
+            <LookAt>
+                <longitude>5.020485</longitude>
+                <latitude>49.072892</latitude>
+                <altitude>0.000000</altitude>
+                <heading>-63.513599</heading>
+                <tilt>75.000000</tilt>
+                <range>5000.000000</range>
+                <altitudeMode>clampToGround</altitudeMode>
+            </LookAt>
+        </gx:FlyTo>
+            
+        </gx:Playlist>
+    </gx:Tour>
+    
+    </Document>
+    </kml>
+    

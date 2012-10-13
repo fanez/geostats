@@ -1,0 +1,108 @@
+MAP
+  EXTENT 647000 2373000 649000 2375000
+  IMAGECOLOR 255 255 255
+  IMAGETYPE agg
+  SIZE -1 -1
+  STATUS ON
+  UNITS METERS
+  CONFIG PROJ_LIB "/usr/share/proj"
+  NAME "Mobisic WMS"
+
+  OUTPUTFORMAT
+    NAME "agg"
+    MIMETYPE "image/png"
+    DRIVER "AGG/PNG"
+    EXTENSION "png"
+    IMAGEMODE "RGBA"
+    TRANSPARENT TRUE
+    FORMATOPTION "INTERLACE=false"
+  END
+
+  PROJECTION
+    "init=epsg:27572"
+  END
+  LEGEND
+    IMAGECOLOR 255 255 255
+    KEYSIZE 20 10
+    KEYSPACING 5 5
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 0
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    STATUS OFF
+  END
+
+  QUERYMAP
+    COLOR 255 255 0
+    SIZE -1 -1
+    STATUS OFF
+    STYLE HILITE
+  END
+
+  SCALEBAR
+    ALIGN CENTER
+    COLOR 0 0 0
+    IMAGECOLOR 255 255 255
+    INTERVALS 4
+    LABEL
+      SIZE MEDIUM
+      TYPE BITMAP
+      BUFFER 0
+      COLOR 0 0 0
+      FORCE FALSE
+      MINDISTANCE -1
+      MINFEATURESIZE -1
+      OFFSET 0 0
+      PARTIALS TRUE
+    END
+    POSITION LL
+    SIZE 200 3
+    STATUS OFF
+    STYLE 0
+    UNITS MILES
+  END
+
+  WEB
+    IMAGEPATH ""
+    IMAGEURL ""
+    METADATA
+      "wms_srs"	"EPSG:27572"
+      "wms_version"	"1.1.0"
+      "wms_title"	"Mobisic WMS Server"
+    END
+    QUERYFORMAT text/html
+    LEGENDFORMAT text/html
+    BROWSEFORMAT text/html
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/ortho_ensop/ensop.tif"
+    METADATA
+      "wms_title"	"ensop.tif"
+    END
+    NAME "ensop.tif"
+    STATUS OFF
+    TYPE RASTER
+    UNITS METERS
+  END
+
+  LAYER
+    DATA "/home/scy/Desktop/Mobisic/ADE_IGN.tif"
+    METADATA
+      "wms_title"	"ADE_IGN.tif"
+    END
+    NAME "ADE_IGN.tif"
+    STATUS OFF
+    TYPE RASTER
+    UNITS METERS
+  END
+
+END

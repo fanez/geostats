@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <Style id="folderStyle">
+            <ListStyle>
+                <listItemType>checkHideChildren</listItemType>
+            </ListStyle>
+        </Style>
+        <Style id="Cours_Eau_default">
+            <LineStyle>
+               <color>99800000</color>
+               <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>5</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+         <Style id="Cours_Eau_random">
+            <LineStyle>
+               <colorMode>random</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+            </Style>
+        <Style id="Confluent">
+            <LineStyle>
+                <color>99ffff66</color>
+                <colorMode>normal</colorMode>      <!-- colorModeEnum: normal or random -->
+               <width>3</width>                   <!-- float -->
+            </LineStyle>
+        </Style>
+           
+        <Folder>
+            <name>Fleuve</name>
+            <description>Carthage</description>
+            <styleUrl>#folderStyle</styleUrl>
+            <Placemark>
+        <description>Bras de la Seine</description>
+        <styleUrl>#Cours_Eau_default</styleUrl>
+        <MultiGeometry><LineString><coordinates>3.89179091264067,48.4987200432923 3.8909843088482,48.4990499689699 3.8901971814419,48.4997306062425 3.88921797668142,48.5010604221806 3.88668450033833,48.5041471507802 3.88562817841406,48.5049287234919 3.88556277247312,48.505064157672 3.88556808620611,48.5053789936513 3.8857207867995,48.5056027665894 3.88565993541655,48.5060080600169 3.88559300992878,48.5060535410248 3.88504925637466,48.5059226457538 3.8845716733695,48.5057012910194 3.88394231035193,48.5053101311686 3.88312253522025,48.5048664046213 3.88277957904093,48.5045990597323 3.88169604885929,48.5045711190665 3.87958524927835,48.5046407418453 3.87881609750095,48.5056000554144 3.87814979432866,48.506234731655 3.87843858934234,48.5065024898725 3.87837316288237,48.5066379199264 3.87731817114998,48.5075093702937 3.87731892321889,48.5075543468326</coordinates></LineString></MultiGeometry>
+        </Placemark>
+        
+        </Folder>
+        <gx:Tour>
+        <name>dowstream tour</name>
+        <visibility>1</visibility>
+        <gx:Playlist>
+                
+        </gx:Playlist>
+    </gx:Tour>
+    
+    </Document>
+    </kml>
+    
