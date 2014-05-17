@@ -1,7 +1,7 @@
 World Bank Open Data API GeoDjango Client
-=========================================
+-----------------------------------------
 
-This is the code of this web page:
+This app was intended to be deployed on dotcloud PaaS free tier which was shut down several years ago:
 
 http://geostats-ludifan.dotcloud.com/world
 
